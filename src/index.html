@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../dist/style.css">
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
     <title>Pied piper company</title>
 </head>
 <body>
 <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile@1x.png" srcset="img/logo-mobile@1x.png 1x
-      img/logo-mobile@2x.png 2x" alt="PiedPiper Logo">
+        <picture class="page-header__logo-image">
+            <source media="(min-resolution: 144dpi),(min-resolution: 1.5dppx)" srcset="img/logo-mobile@2x.png 2x">
+            <img src="img/logo-mobile@1x.png" alt="PiedPiper Logo" width="184" height="45">
+        </picture>
     </a>
     <nav class="main-nav">
         <button class="main-nav__toggle" type="button"></button>
@@ -37,14 +41,14 @@
     </nav>
 </header>
 <main class="page-main">
-    <section class="piper-net" id="main">
+    <section class="page-main__item piper-net" id="main">
         <a class="piper-net__link">
             <h1 class="piper-net__title section__title">
                 PiperNet is Here
             </h1>
         </a>
     </section>
-    <section class="problem" id="problem">
+    <section class="page-main__item problem" id="problem">
         <h2 class="problem__title section__title">
             The Problem
         </h2>
@@ -67,7 +71,7 @@
             Put even simpler — <b>it’s the internet, completely decentralized</b>.
         </p>
     </section>
-    <section class="quote__container">
+    <section class="page-main__item quote__container">
         <blockquote class="quote__text">
             We’re in this together! All of our<br>
             computers and phones join in a network<br>
@@ -75,13 +79,14 @@
             world has ever seen.
         </blockquote>
     </section>
-    <section class="pied-piper-coin" id="pied-piper-coin">
+    <section class="page-main__item pied-piper-coin" id="pied-piper-coin">
         <h2 class="pied-piper-coin__title section__title">
             Introducing PiedPiperCoin
         </h2>
-        <img class="pied-piper-coin__image" src="img/main-coin-logo-mobile@1x.png"
-             srcset="img/main-coin-logo-mobile@1x.png 1x img/main-coin-logo-mobile@2px.png 2x"
-             alt="PiedPiperCoin">
+        <picture class="pied-piper-coin__image">
+            <source media="(min-resolution: 144dpi),(min-resolution: 1.5dppx)" srcset="img/main-coin-logo-mobile@2x.png 2x">
+            <img src="img/main-coin-logo-mobile@1x.png" alt="PiedPiperCoin" width="115" height="115">
+        </picture>
         <p class="pied-piper-coin__paragraph">
             Pied Piper's new internet is built <i>for users, by users.</i><br>
             You supply the storage, compute, and networking resources that<br>
@@ -97,7 +102,7 @@
             Joe with a smartphone you'll love all you can do with PiedPiperCoin.
         </p>
     </section>
-    <section class="team" id="team">
+    <section class="page-main__item team" id="team">
         <h2 class="team__title section__title">
             The Team
         </h2>
@@ -105,8 +110,8 @@
             <li class="members-list__item">
                 <figure class="team__member">
                     <img class="team__member-image" src="img/photo-1-mobile@1x.png"
-                    srcset="img/photo-1-mobile@1x.png 1x img/photo-1-mobile@2x.png 2x"
-                    alt="Richard Hendricks">
+                    srcset="img/photo-1-mobile@1x.png 1x, img/photo-1-mobile@2x.png 2x"
+                    alt="Richard Hendricks" width="168" height="168">
                     <figcaption class="team__member-info">
                         <p class="team__member-name">
                             Richard Hendricks
@@ -120,8 +125,8 @@
             <li class="members-list__item">
                 <figure class="team__member">
                     <img class="team__member-image" src="img/photo-2-mobile@1x.png"
-                    srcset="img/photo-2-mobile@1x.png 1x img/photo-2-mobile@2x.png 2x"
-                    alt="Dinesh Chugtai">
+                    srcset="img/photo-2-mobile@1x.png 1x, img/photo-2-mobile@2x.png 2x"
+                    alt="Dinesh Chugtai" width="168" height="168">
                     <figcaption class="team__member-info">
                         <p class="team__member-name">
                             Dinesh Chugtai
@@ -135,8 +140,8 @@
             <li class="members-list__item">
                 <figure class="team__member">
                     <img class="team__member-image" src="img/photo-3-mobile@1x.png"
-                         srcset="img/photo-3-mobile@1x.png 1x img/photo-3-mobile@2x.png 2x"
-                         alt="Bertram Gilfoyle">
+                         srcset="img/photo-3-mobile@1x.png 1x, img/photo-3-mobile@2x.png 2x"
+                         alt="Bertram Gilfoyle" width="168" height="168">
                     <figcaption class="team__member-info">
                         <p class="team__member-name">
                             Bertram Gilfoyle
@@ -150,8 +155,8 @@
             <li class="members-list__item">
                 <figure class="team__member">
                     <img class="team__member-image" src="img/photo-4-mobile@1x.png"
-                         srcset="img/photo-4-mobile@1x.png 1x img/photo-4-mobile@2x.png 2x"
-                         alt="Jared Dunn">
+                         srcset="img/photo-4-mobile@1x.png 1x, img/photo-4-mobile@2x.png 2x"
+                         alt="Jared Dunn" width="168" height="168">
                     <figcaption class="team__member-info">
                         <p class="team__member-name">
                             Jared Dunn
@@ -165,8 +170,8 @@
             <li class="members-list__item">
                 <figure class="team__member">
                     <img class="team__member-image" src="img/photo-5-mobile@1x.png"
-                         srcset="img/photo-5-mobile@1x.png 1x img/photo-5-mobile@2x.png 2x"
-                         alt="Monica Hall">
+                         srcset="img/photo-5-mobile@1x.png 1x, img/photo-5-mobile@2x.png 2x"
+                         alt="Monica Hall" width="168" height="168">
                     <figcaption class="team__member-info">
                         <p class="team__member-name">
                             Monica Hall
@@ -180,8 +185,8 @@
             <li class="members-list__item">
                 <figure class="team__member">
                     <img class="team__member-image" src="img/photo-6-mobile@1x.png"
-                         srcset="img/photo-6-mobile@1x.png 1x img/photo-6-mobile@2x.png 2x"
-                         alt="Nelson Bighetti">
+                         srcset="img/photo-6-mobile@1x.png 1x, img/photo-6-mobile@2x.png 2x"
+                         alt="Nelson Bighetti" width="168" height="168">
                     <figcaption class="team__member-info">
                         <p class="team__member-name">
                             Nelson Bighetti

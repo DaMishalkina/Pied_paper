@@ -1,1 +1,6 @@
 .idea
+package-lock.json
+.sass-cache*
+.css.map
+node_modules
+dist
