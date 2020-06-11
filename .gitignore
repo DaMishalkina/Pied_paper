@@ -4,3 +4,4 @@ package-lock.json
 .css.map
 node_modules
 dist
+.css

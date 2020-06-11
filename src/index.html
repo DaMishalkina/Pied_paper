@@ -8,29 +8,25 @@
 </head>
 <body>
 <header class="page-header">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="#main">
         <picture class="page-header__logo-image">
             <source media="(min-resolution: 144dpi),(min-resolution: 1.5dppx)" srcset="img/logo-mobile@2x.png 2x">
             <img src="img/logo-mobile@1x.png" alt="PiedPiper Logo" width="184" height="45">
         </picture>
     </a>
     <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-                <a class="site-list__link">
-                    Main
-                </a>
-            </li>
+        <ul class="main-nav__list site-list main-nav__list">
             <li class="site-list__item">
                 <a class="site-list__link" href="#problem">
-                   the problem
+                    the problem
                 </a>
+                <span class="site-list__separator"> | </span>
             </li>
             <li class="site-list__item">
                 <a class="site-list__link" href="#pied-piper-coin">
                     PiedPiperCoin
                 </a>
+                <span class="site-list__separator"> | </span>
             </li>
             <li class="site-list__item">
                 <a class="site-list__link" href="#team">
@@ -39,6 +35,37 @@
             </li>
         </ul>
     </nav>
+    <div class="main-nav--interactive__container">
+        <button class="main-nav--interactive__toggle toggle-container" type="button">
+            <div class="toggle-container__item bar1"></div>
+            <div class="toggle-container__item bar2"></div>
+            <div class="toggle-container__item bar3"></div>
+        </button>
+        <nav class="main-nav--interactive">
+            <ul class="main-nav--interactive__list site-list--interactive">
+                <li class="site-list--interactive__item site-list--interactive__item--inactive">
+                    <a class="site-list--interactive__link" href="#main">
+                        Main
+                    </a>
+                </li>
+                <li class="site-list--interactive__item">
+                    <a class="site-list--interactive__link" href="#problem">
+                       the problem
+                    </a>
+                </li>
+                <li class="site-list--interactive__item">
+                    <a class="site-list--interactive__link" href="#pied-piper-coin">
+                        PiedPiperCoin
+                    </a>
+                </li>
+                <li class="site-list--interactive__item">
+                    <a class="site-list--interactive__link" href="#team">
+                        the team
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main class="page-main">
     <section class="page-main__item piper-net" id="main">
@@ -207,5 +234,6 @@
         does not imply endorsement.
     </p>
 </footer>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>
