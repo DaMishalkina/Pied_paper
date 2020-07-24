@@ -1,0 +1,70 @@
+@use '../mixins' as m;
+
+.pied-piper-coin {
+  @include m.null-style;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 0 85px;
+}
+
+.pied-piper-coin__title {
+  @include m.null-style;
+  @include m.mobile-title-style;
+  text-align: center;
+  margin: 0 0 12px;
+
+}
+
+.pied-piper-coin__paragraph, .pied-piper-coin__coin-paragraph {
+  @include m.null-style;
+  @include m.mobile-text-style;
+  margin: 8px;
+
+}
+
+.pied-piper-coin__coin-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media (min-width: 768px) {
+  .pied-piper-coin {
+    padding: 0 55px 85px;
+  }
+  .pied-piper-coin__coin-container {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1219px) {
+  .pied-piper-coin {
+    padding: 0 0 92px;
+  }
+
+  .pied-piper-coin__title {
+    @include m.desktop-title-style;
+    margin: 0 0 16px;
+  }
+
+  .pied-piper-coin__paragraph, .pied-piper-coin__coin-paragraph {
+    @include m.desktop-text-style;
+  }
+
+  .pied-piper-coin__coin-container {
+    margin-bottom: 40px;
+  }
+
+  .pied-piper-coin__image {
+    margin-right: 48px;
+  }
+}
+
+@media (min-width: 2011px) {
+  .pied-piper-coin__coin-container, .pied-piper-coin__paragraph {
+    margin: 12px 450px;
+  }
+}

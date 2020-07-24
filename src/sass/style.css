@@ -1,0 +1,134 @@
+.page-header {
+  background-color: #007765;
+  display: flex;
+  margin: 0;
+  padding: 20px 0;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+.toggle-container {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background-color: #007765;
+}
+
+.toggle-container__item {
+  width: 25px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+.main-nav__list {
+  position: fixed;
+  top: 73px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #007765;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 0;
+  visibility: hidden;
+}
+
+.site-list__item, .site-list__link {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #FFF;
+  transition: all 0.2s;
+  font-size: 24px;
+}
+.site-list__item:hover, .site-list__item:focus, .site-list__link:hover, .site-list__link:focus {
+  background-color: #00917b;
+}
+
+.site-list__separator {
+  display: none;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -7px);
+  transform: rotate(45deg) translate(-7px, -7px);
+}
+
+@media (min-width: 768px) {
+  .toggle-container {
+    display: none;
+  }
+
+  .page-header__logo {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__list {
+    visibility: visible;
+    position: unset;
+    flex-direction: row;
+    height: unset;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-list__separator {
+    display: unset;
+  }
+
+  .site-list__item {
+    display: flex;
+    margin: 10.5px 0;
+    padding: 0;
+  }
+
+  .site-list__link {
+    display: flex;
+    padding: 0;
+    margin: 0 8px;
+  }
+
+  .site-list__item--inactive {
+    display: none;
+  }
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  @import url("src/fonts/roboto-v20-latin_cyrillic-regular.woff");
+  @import url("src/fonts/roboto-v20-latin_cyrillic-regular.woff2");
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */

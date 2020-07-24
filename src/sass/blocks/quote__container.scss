@@ -1,0 +1,39 @@
+@use '../mixins' as m;
+
+.quote__container {
+  background: #1871ff url('../src/img/bg-main-mobile@1x.png') no-repeat center top;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0 0 85px;
+}
+
+.quote__text {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .quote__container {
+    padding: 0 0 85px;
+  }
+}
+
+@media (min-width: 1219px) {
+ .quote__container {
+   background: #1871ff url('../src/img/bg-main-mobile@2x.png') no-repeat center top;
+   padding: 79px 0;
+ }
+  .quote__text {
+    margin-top: 42px;
+    font-size: 48px;
+  }
+}
+
+@media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+  .quote__container {
+    background: #1871ff url('../src/img/bg-main-mobile@2x.png') no-repeat center top;
+  }
+}

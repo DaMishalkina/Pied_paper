@@ -1,0 +1,22 @@
+@use '../mixins' as m;
+
+
+.page-footer {
+  background-color: #333333;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.page-footer__paragraph {
+  @include m.null-style;
+  padding: 48px 20%;
+  max-width: 540px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 1219px) {
+  .page-footer {
+    font-size: 18px;
+  }
+}

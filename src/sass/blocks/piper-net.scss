@@ -1,0 +1,51 @@
+@use '../variables' as v;
+
+.piper-net {
+  background: v.$main-color url('../src/img/bg-header-mobile@1x.png') no-repeat center center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.piper-net__title {
+  font-size: 36px;
+  color: #FFFFFF;
+  font-weight: normal;
+  margin: calc(100vh/3) 0;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .piper-net__title {
+    font-size: 72px;
+  }
+  .piper-net {
+    padding: 0;
+    background: v.$main-color url('../src/img/bg-header-mobile@2x.png') no-repeat center center;
+    background-size: cover;
+    height: unset;
+  }
+}
+
+@media (min-width: 1219px){
+  .piper-net {
+    padding: 0;
+    background: v.$main-color url('../src/img/bg-header-mobile@2x.png') no-repeat center center;
+    background-size: cover;
+    height: unset;
+  }
+  .piper-net__title {
+    margin: 160px 0;
+  }
+}
+
+@media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+  .piper-net {
+    background: v.$main-color url('../src/img/bg-header-mobile@2x.png') no-repeat center center;
+    background-size: cover;
+  }
+}

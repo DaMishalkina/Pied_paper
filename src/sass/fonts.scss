@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  @import url('src/fonts/roboto-v20-latin_cyrillic-regular.woff'),
+  url('src/fonts/roboto-v20-latin_cyrillic-regular.woff2');
+
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}

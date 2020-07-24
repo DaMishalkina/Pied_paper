@@ -1,0 +1,165 @@
+@use '../variables' as v;
+.page-header {
+  background-color: v.$main-color;
+  display: flex;
+  margin: 0 0 -85px;
+  padding: 20px;
+  justify-content: space-between;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.toggle-container{
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background-color: v.$main-color;
+}
+
+.toggle-container__item{
+  width: 25px;
+  height: 3px;
+  background-color: #FFF;
+  margin: 6px 0;
+  transition: 0.4s;
+  border-radius: 15px;
+}
+
+.main-nav {
+  display: none;
+}
+
+.main-nav--interactive {
+  display: none;
+}
+
+.main-nav--interactive.visible{
+  position: fixed;
+  top: 73px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: v.$main-color;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav--interactive__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.site-list--interactive__item, .site-list--interactive__link {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  color: #FFF;
+  transition: all .2s;
+  font-size: 24px;
+
+  &:hover,
+  &:active{
+    background-color: lighten(v.$main-color, 5%);
+  }
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px) ;
+  transform: rotate(-45deg) translate(-6px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-7px, -7px) ;
+  transform: rotate(45deg) translate(-7px, -7px) ;
+}
+
+@media (min-width: 768px) {
+
+  .main-nav--interactive__container {
+    display: none;
+  }
+
+  .page-header__logo {
+    display: flex;
+    flex-shrink: 0;
+  }
+
+  .main-nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    height: unset;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .site-list__separator {
+    display: unset;
+
+  }
+
+  .site-list__item, .site-list__link {
+    display: flex;
+    margin: 10.5px 0;
+    padding: 0;
+    color: #FFF;
+    transition: all .2s;
+    font-size: 24px;
+    &:hover,
+    &:active {
+      background-color: lighten(v.$main-color, 5%);
+    }
+
+  }
+
+  .site-list__link {
+    display: flex;
+    padding: 0;
+    margin: 0 8px;
+  }
+
+  .site-list__item--inactive {
+    display: none;
+  }
+
+
+}
+
+@media (min-width: 1219px){
+  .page-header {
+    padding: 20px 55px;
+  }
+}
+
+@media (min-width: 2011px) {
+  .page-header {
+    padding: 20px;
+    justify-content: space-around;
+  }
+}
+
+
+
+
+
+
