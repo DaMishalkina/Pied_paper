@@ -2,12 +2,13 @@
 .page-header {
   background-color: v.$main-color;
   display: flex;
-  margin: 0;
+  margin: 0 0 -85px;
   padding: 20px;
   justify-content: space-between;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  z-index: 1;
 }
 
 .toggle-container{

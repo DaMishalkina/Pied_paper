@@ -1,0 +1,58 @@
+@use '../mixins' as m;
+@use '../variables' as v;
+
+.problem__title {
+  @include m.mobile-title-style;
+}
+
+.problem {
+  background: v.$block-color;
+  padding: 0 10px 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.problem__title {
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.problem__paragraph {
+  @include m.mobile-text-style;
+  margin: 8px;
+}
+
+@media (min-width: 768px) {
+  .problem {
+    padding: 0 55px 85px;
+  }
+}
+
+@media (min-width: 1219px) {
+  .problem {
+    padding: 0 55px 92px;
+  }
+
+  .problem__title {
+    margin: 0 0 16px;
+    @include m.desktop-title-style;
+  }
+
+  .problem__paragraph {
+    @include m.desktop-text-style;
+  }
+
+}
+
+@media (min-width: 2011px) {
+  .problem {
+    padding: 0 0 92px;
+
+  }
+
+  .problem__paragraph {
+    margin: 12px 450px;
+  }
+}

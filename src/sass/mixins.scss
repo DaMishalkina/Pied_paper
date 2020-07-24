@@ -1,0 +1,27 @@
+@use 'variables' as v;
+
+@mixin mobile-title-style {
+  color: v.$main-color;
+  font-size: 24px;
+}
+
+@mixin desktop-title-style {
+  color: v.$main-color;
+  font-size: 64px;
+}
+
+@mixin mobile-text-style {
+  color:#000;
+  font-size: 16px;
+}
+
+@mixin desktop-text-style {
+  color:#000;
+  font-size: 32px;
+}
+
+@mixin null-style {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
