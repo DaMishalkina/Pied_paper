@@ -1,7 +1,7 @@
 @use '../variables' as v;
 
 .piper-net {
-  background: v.$main-color url('../src/img/bg-header-mobile@1x.png') no-repeat center center;
+  background: v.$main-color url('../img/bg-header-mobile@1x.png') no-repeat center center;
   background-size: cover;
   margin: 0;
   padding: 0;
@@ -25,7 +25,7 @@
   }
   .piper-net {
     padding: 0;
-    background: v.$main-color url('../src/img/bg-header-mobile@2x.png') no-repeat center center;
+    background: v.$main-color url('../img/bg-header-mobile@2x.png') no-repeat center center;
     background-size: cover;
     height: unset;
   }
@@ -34,7 +34,7 @@
 @media (min-width: 1219px){
   .piper-net {
     padding: 0;
-    background: v.$main-color url('../src/img/bg-header-mobile@2x.png') no-repeat center center;
+    background: v.$main-color url('../img/bg-header-mobile@2x.png') no-repeat center center;
     background-size: cover;
     height: unset;
   }
@@ -45,7 +45,7 @@
 
 @media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
   .piper-net {
-    background: v.$main-color url('../src/img/bg-header-mobile@2x.png') no-repeat center center;
+    background: v.$main-color url('../img/bg-header-mobile@2x.png') no-repeat center center;
     background-size: cover;
   }
 }
